@@ -1,0 +1,71 @@
+{
+  "data_source": "full",
+  "data_source_path": "data/raw/Online Retail.xlsx",
+  "raw_rows": 541909,
+  "clean_rows": 392692,
+  "unique_customers": 4338,
+  "total_revenue": 8887208.89,
+  "scope": {
+    "n_customers": 3370,
+    "n_churned": 1449,
+    "n_retained": 1921,
+    "churn_rate": 0.42997032640949556,
+    "majority_baseline_accuracy": 0.5700296735905044,
+    "median_recency": 75.0,
+    "median_monetary": 563.21
+  },
+  "train_split": {
+    "cut_date": "2011-06-12",
+    "label_end": "2011-09-10",
+    "customers": 2821,
+    "churn_rate": 0.52251
+  },
+  "test_split": {
+    "cut_date": "2011-09-10",
+    "label_end": "2011-12-09",
+    "customers": 3370,
+    "churn_rate": 0.42997
+  },
+  "best_model": "LogisticRegression",
+  "metrics": {
+    "LogisticRegression": {
+      "roc_auc": 0.7442677981799363,
+      "pr_auc": 0.6341768758847997,
+      "precision": 0.5902255639097744,
+      "recall": 0.7584541062801933,
+      "f1": 0.6638477801268499,
+      "accuracy": 0.6697329376854599,
+      "threshold": 0.5,
+      "tn": 1158,
+      "fp": 763,
+      "fn": 350,
+      "tp": 1099
+    },
+    "RandomForest": {
+      "roc_auc": 0.7311463254020346,
+      "pr_auc": 0.6070386519277096,
+      "precision": 0.576036866359447,
+      "recall": 0.7763975155279503,
+      "f1": 0.6613756613756614,
+      "accuracy": 0.6581602373887241,
+      "threshold": 0.5,
+      "tn": 1093,
+      "fp": 828,
+      "fn": 324,
+      "tp": 1125
+    },
+    "GradientBoosting": {
+      "roc_auc": 0.7285515976302025,
+      "pr_auc": 0.6043141934301334,
+      "precision": 0.5767656090071648,
+      "recall": 0.7777777777777778,
+      "f1": 0.6623567440493682,
+      "accuracy": 0.6590504451038576,
+      "threshold": 0.5,
+      "tn": 1094,
+      "fp": 827,
+      "fn": 322,
+      "tp": 1127
+    }
+  }
+}
